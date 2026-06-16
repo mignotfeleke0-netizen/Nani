@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mignot Feleke | Computer Science Student</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    <style>
+      *{
+          margin:0;
+          padding:0;
+          box-sizing:border-box;
+          scroll-behavior:smooth;
+          font-family:'Poppins',sans-serif;
+      }
+      
+      body{
+          background:#0f172a;
+          color:white;
+      }
+      
+      header{
+          position:fixed;
+          top:0;
+          width:100%;
+          padding:20px 10%;
+          display:flex;
+          justify-content:space-between;
+          align-items:center;
+          background:rgba(15,23,42,0.95);
+          backdrop-filter:blur(10px);
+          z-index:1000;
+      }
+      
+      .logo{
+          font-size:1.5rem;
+          font-weight:700;
+          color:#38bdf8;
+      }
+      
+      nav a{
+          margin-left:25px;
+          text-decoration:none;
+          color:white;
+          transition:.3s;
+      }
+      
+      nav a:hover{
+          color:#38bdf8;
+      }
+      
+      section{
+          min-height:100vh;
+          padding:100px 10%;
+      }
+      
+      .hero{
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          text-align:center;
+      }
+      
+      .hero-content h1{
+          font-size:4rem;
+      }
+      
+      .hero-content h1 span{
+          color:#38bdf8;
+      }
+      
+      .hero-content p{
+          margin:20px auto;
+          max-width:700px;
+          color:#cbd5e1;
+      }
+      
+      .btn{
+          display:inline-block;
+          padding:12px 25px;
+          background:#38bdf8;
+          color:#0f172a;
+          text-decoration:none;
+          border-radius:8px;
+          font-weight:600;
+          margin-top:15px;
+      }
+      
+      .about{
+          background:#111827;
+      }
+      
+      .title{
+          text-align:center;
+          font-size:2.5rem;
+          margin-bottom:50px;
+          color:#38bdf8;
+      }
+      
+      .about-content{
+          max-width:900px;
+          margin:auto;
+          text-align:center;
+          color:#d1d5db;
+          line-height:1.8;
+      }
+      
+      .skills-container{
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+          gap:25px;
+      }
+      
+      .skill-box{
+          background:#1e293b;
+          padding:25px;
+          border-radius:15px;
+          transition:.3s;
+      }
+      
+      .skill-box:hover{
+          transform:translateY(-10px);
+      }
+      
+      .skill-box h3{
+          color:#38bdf8;
+          margin-bottom:15px;
+      }
+      
+      .projects{
+          background:#111827;
+      }
+      
+      .project-grid{
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+          gap:25px;
+      }
+      
+      .project-card{
+          background:#1e293b;
+          padding:25px;
+          border-radius:15px;
+      }
+      
+      .project-card h3{
+          color:#38bdf8;
+          margin-bottom:10px;
+      }
+      
+      .contact-content{
+          text-align:center;
+      }
+      
+      .contact-box{
+          max-width:700px;
+          margin:auto;
+          background:#1e293b;
+          padding:40px;
+          border-radius:15px;
+      }
+      
+      .contact-box p{
+          margin:15px 0;
+          color:#d1d5db;
+      }
+      
+      footer{
+          text-align:center;
+          padding:25px;
+          background:#111827;
+          color:#94a3b8;
+      }
+      
+      @media(max-width:768px){
+      
+      .hero-content h1{
+          font-size:2.5rem;
+      }
+      
+      nav{
+          display:none;
+      }
+      
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo">Mignot Feleke</div>
+
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero" id="home">
+
+      <div class="hero-content">
+        <h1>Hello, I'm
+          <span>Mignot Feleke</span>
+        </h1>
+
+        <p>
+          Computer Science Student at Infolink University passionate about Web Development,
+          Data Analysis, Data Management, Computer Maintenance, and Networking.
+        </p>
+
+        <a href="#contact" class="btn">Contact Me</a>
+      </div>
+
+    </section>
+
+    <section class="about" id="about">
+
+      <h2 class="title">About Me</h2>
+
+      <div class="about-content">
+
+        <p>
+          I am Mignot Feleke, a Computer Science student at Infolink University located in
+          Hawassa, Ethiopia. I am passionate about technology, problem solving,
+          and continuous learning.
+        </p>
+
+        <br>
+
+        <p>
+          My interests include Web Development, Data Analysis and Management, Computer Maintenance,
+          and Networking. I enjoy building practical solutions and improving my
+          technical skills through academic and personal projects.
+        </p>
+
+      </div>
+
+    </section>
+
+    <section id="skills">
+
+      <h2 class="title">My Skills</h2>
+
+      <div class="skills-container">
+
+        <div class="skill-box">
+          <h3>Web Development</h3>
+          <p>
+            HTML, CSS, JavaScript, Responsive Design, Frontend Development
+          </p>
+        </div>
+
+        <div class="skill-box">
+          <h3>Data Analysis & Management</h3>
+          <p>
+            SQL, Database Management, Data Processing, Data Visualization
+          </p>
+        </div>
+
+        <div class="skill-box">
+          <h3>Computer Maintenance</h3>
+          <p>
+            Hardware Troubleshooting, Software Installation, System Maintenance
+          </p>
+        </div>
+
+        <div class="skill-box">
+          <h3>Networking</h3>
+          <p>
+            TCP/IP, Network Configuration, Network Troubleshooting, Basic Network Security
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section class="projects" id="projects">
+
+      <h2 class="title">Projects</h2>
+
+      <div class="project-grid">
+
+        <div class="project-card">
+          <h3>Student Management System</h3>
+          <p>
+            A system designed to manage student records, attendance, and academic information
+            efficiently.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Hospital Management System</h3>
+          <p>
+            A healthcare management application for handling patient records and hospital operations.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Personal Portfolio Website</h3>
+          <p>
+            A responsive website showcasing education, skills, projects, and contact information.
+          </p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="contact">
+
+      <h2 class="title">Contact Me</h2>
+
+      <div class="contact-content">
+
+        <div class="contact-box">
+
+          <p>
+            <strong>Name:</strong> Mignot Feleke</p>
+
+          <p>
+            <strong>University:</strong> Infolink University</p>
+
+          <p>
+            <strong>Department:</strong> Computer Science</p>
+
+          <p>
+            <strong>Email:</strong> mignotfeleke0@gmail.com</p>
+
+          <p>
+            <strong>Location:</strong> Hawassa, Ethiopia</p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <footer>
+      © 2026 Mignot Feleke | Computer Science Student
+    </footer>
+
+  </body>
+
+</html>
+<!--
+Visual Code Mobile
+Developed By Manish Nirmal
+App Available on Play Store :-
+https://play.google.com/store/apps/details?id=lk.visual.code.mobile
+YouTube :-
+https://youtube.com/ManishNirmal
+-->
